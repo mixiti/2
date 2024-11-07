@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt Game</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #animation { width: 100%; height: 400px; position: relative; background-size: cover; background-position: center; }
+        .explore { position: absolute; width: 50px; height: auto; transition: all 1s; }
+        #score { font-weight: bold; margin-top: 20px; }
+        button { margin: 5px; }
+        #message { margin-top: 20px; font-size: 18px; color: darkgreen; }
+        .hidden { display: none; }
+        img { width: 150px; height: auto; position: absolute; bottom: 0; }
+    </style>
+</head>
+<body>
+    <h1>Treasure Hunt Game</h1>
+    <div id="animation">
+        <img id="temple" class="hidden" src="神庙.png" alt="Temple" />
+        <img id="treasureBox" class="hidden" src="箱子.png" alt="Treasure Box" />
+        <img id="guard" class="hidden" src="遗迹守卫.png" alt="Guard" />
+    </div>
+    <img id="clueImage" class="hidden" src="线索.png" alt="Clue" />
+    <div id="score">Score: 0</div>
+    <div id="message"></div>
+
+    <h2>Choose a location:</h2>
+    <button onclick="startHunt()">Start Treasure Hunt</button>
+
+    <!-- 背景音乐 -->
+    <audio id="background-music" autoplay loop>
+        <source src="background-music.mp3" type="audio/mp3">
+        您的浏览器不支持音频播放。
+    </audio>
+
+    <script src="treasure.js"></script>
+</body>
+</html>

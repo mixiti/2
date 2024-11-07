@@ -1,0 +1,5 @@
+{
+  "library": { "name": "古老的图书馆", "description": "一个充满古籍和秘密的地方。" },
+  "temple": { "name": "遗失的神庙", "description": "埋藏着无数的历史遗迹和神秘力量。" },
+  "guard": { "name": "守卫", "description": "神庙的守卫，只有完成挑战者才能通行。" }
+}
